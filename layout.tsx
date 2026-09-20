@@ -1,0 +1,3 @@
+import "./globals.css"; import Link from "next/link";
+export const metadata={title:"AI Trade Tutor",description:"Learn real trades with visual lessons, practice and AI tutoring."};
+export default function RootLayout({children}:{children:React.ReactNode}){return <><header className="container nav"><Link href="/" className="brand">⚡ AI Trade Tutor</Link><nav className="navlinks"><Link href="/trades">Trades</Link><Link href="/how-it-works">How It Works</Link><Link href="/pricing">Pricing</Link><Link href="/about">About</Link><Link href="/dashboard">Dashboard</Link><Link href="/login">Login</Link></nav></header>{children}<footer><div className="container">AI Trade Tutor — practical learning with AI. Completion certificates are not professional licensing.</div></footer></>}
